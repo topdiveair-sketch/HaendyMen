@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2f5d50">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<title>Zuhause am Bach Mobile</title>
+<style>
+:root{--bg:#f6f2ea;--card:#fffaf1;--ink:#1f2b25;--green:#2f5d50;--gold:#d89b34;--red:#b64735;--blue:#456c93;--line:#e3d8c5;--shadow:0 8px 24px rgba(0,0,0,.12)}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{position:sticky;top:0;z-index:10;background:linear-gradient(135deg,#2f5d50,#173d34);color:white;padding:18px 16px 14px;box-shadow:var(--shadow)}
+h1{font-size:24px;margin:0 0 6px;font-weight:900}.small{font-size:13px;opacity:.9}main{padding:14px;max-width:760px;margin:0 auto 82px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.btn,.bigbtn{border:0;border-radius:20px;padding:18px 12px;font-size:20px;font-weight:900;background:var(--card);box-shadow:var(--shadow);color:var(--ink);min-height:82px}
+.bigbtn{width:100%;margin:8px 0;text-align:left}.btn:active,.bigbtn:active{transform:scale(.98)}.green{background:#dff1e9}.gold{background:#fff0ce}.red{background:#ffe1db}.blue{background:#e2edf8}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:14px;margin:12px 0;box-shadow:var(--shadow)}.card h2{margin:0 0 10px;font-size:22px}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:12px 0}.row:first-of-type{border-top:0}
+.pill{display:inline-block;border-radius:999px;padding:6px 10px;font-size:13px;font-weight:900;background:#eee}.room{font-weight:900;color:var(--green)}
+input,select,textarea{width:100%;font-size:18px;padding:14px;border-radius:14px;border:1px solid var(--line);background:white;margin:6px 0 10px}
+label{font-weight:900;font-size:14px;color:#66736b}.hidden{display:none}.nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);z-index:20}
+.nav button{border:0;background:white;padding:10px 4px;font-size:13px;font-weight:900;color:var(--ink)}.total{font-size:30px;font-weight:900;color:var(--green)}.itembtn{font-size:18px;min-height:68px;padding:12px}.danger{background:#ffe1db;color:#8a2416}.ok{background:#dff1e9;color:#174737}.notice{font-size:14px;background:#eef6f2;border:1px solid #cfe2da;border-radius:14px;padding:10px;margin-top:10px}@media (min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header><h1>🏡 Zuhause am Bach Mobile</h1><div class="small">4 Zimmer • Gäste speichern • Extras zur Rechnung buchen</div></header>
+<main>
+<section id="home"><div class="grid"><button class="btn green" onclick="show('bookings')">🛏 Buchungen</button><button class="btn blue" onclick="show('guests')">👥 Gäste</button><button class="btn gold" onclick="show('extras')">🍺 Extras</button><button class="btn green" onclick="show('invoice')">💶 Rechnung</button></div><div class="notice" id="installHint">Online öffnen. In Chrome erscheint nach kurzer Zeit „App installieren“ oder „Zum Startbildschirm hinzufügen“.</div><div class="card"><h2>Heute / Schnellzugriff</h2><div id="todayList"></div></div><div class="card"><h2>Zimmer</h2><div id="roomStatus"></div></div></section>
+<section id="bookings" class="hidden"><button class="bigbtn green" onclick="newBooking()">➕ Neue Buchung</button><div class="card"><h2>Buchungen</h2><div id="bookingList"></div></div></section>
+<section id="guests" class="hidden"><button class="bigbtn green" onclick="newGuest()">➕ Neuen Gast hinzufügen</button><div class="card"><h2>Gespeicherte Gäste</h2><input id="guestSearch" placeholder="Gast suchen..." oninput="renderGuests()"><div id="guestList"></div></div></section>
+<section id="editGuest" class="hidden"><div class="card"><h2 id="guestFormTitle">Gast</h2><input type="hidden" id="guestId"><label>Name</label><input id="guestName"><label>Telefon</label><input id="guestPhone"><label>E-Mail</label><input id="guestEmail"><label>Notizen</label><textarea id="guestNotes" rows="3"></textarea><button class="bigbtn green" onclick="saveGuest()">💾 Gast speichern</button><button class="bigbtn" onclick="show('guests')">Zurück</button></div></section>
+<section id="editBooking" class="hidden"><div class="card"><h2 id="bookingFormTitle">Buchung</h2><input type="hidden" id="bookingId"><label>Gast</label><select id="bookingGuest"></select><button class="bigbtn blue" onclick="newGuestFromBooking()">➕ Gast neu hinzufügen</button><label>Zimmer</label><select id="bookingRoom"></select><label>Anreise</label><input id="bookingArrival" type="date"><label>Abreise</label><input id="bookingDeparture" type="date"><label>Personen</label><input id="bookingPersons" type="number" min="1" value="2"><label>Zimmerpreis pro Nacht</label><input id="bookingPrice" type="number" step="0.01" value="89"><label>Frühstück</label><select id="bookingBreakfast"><option value="kein">kein</option><option value="normal">normal</option><option value="vegetarisch">vegetarisch</option><option value="vegan">vegan</option></select><button class="bigbtn green" onclick="saveBooking()">💾 Buchung speichern</button><button class="bigbtn danger" onclick="deleteBooking()">🗑 Buchung löschen</button><button class="bigbtn" onclick="show('bookings')">Zurück</button></div></section>
+<section id="extras" class="hidden"><div class="card"><h2>Gast / Buchung auswählen</h2><select id="activeBooking" onchange="setActiveBooking(this.value)"></select></div><div class="card"><h2>Getränke</h2><div class="grid" id="drinkButtons"></div></div><div class="card"><h2>Speisen</h2><div class="grid" id="foodButtons"></div></div><div class="card"><h2>Freie Position</h2><label>Text</label><input id="customText" placeholder="z.B. Marillenkuchen"><label>Betrag €</label><input id="customPrice" type="number" step="0.01" placeholder="0.00"><button class="bigbtn green" onclick="addCustom()">➕ Zur Rechnung</button></div></section>
+<section id="invoice" class="hidden"><div class="card"><h2>Rechnung / Extras</h2><select id="invoiceBooking" onchange="setActiveBooking(this.value)"></select><div id="invoiceDetails"></div><button class="bigbtn blue" onclick="copyInvoice()">📋 Rechnungstext kopieren</button><button class="bigbtn gold" onclick="exportJson()">⬇ Export JSON</button><button class="bigbtn danger" onclick="clearExtras()">🧹 Extras löschen</button></div></section>
+</main>
+<nav class="nav"><button onclick="show('home')">🏡 Heute</button><button onclick="show('bookings')">🛏 Buchung</button><button onclick="show('extras')">🍺 Extras</button><button onclick="show('invoice')">💶 Rechnung</button></nav>
+<script src="./app.js"></script>
+</body>
+</html>
