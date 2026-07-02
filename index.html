@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2f5d50">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Zuhause am Bach Mobile</title>
+<style>
+:root{
+  --bg:#f6f2ea; --card:#fffaf1; --ink:#1f2b25; --muted:#66736b;
+  --green:#2f5d50; --gold:#d89b34; --red:#b64735; --blue:#456c93;
+  --line:#e3d8c5; --shadow:0 8px 24px rgba(0,0,0,.12);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{position:sticky;top:0;z-index:10;background:linear-gradient(135deg,#2f5d50,#173d34);color:white;padding:18px 16px 14px;box-shadow:var(--shadow)}
+h1{font-size:24px;margin:0 0 6px;font-weight:900}
+.small{font-size:13px;opacity:.9}
+main{padding:14px;max-width:760px;margin:0 auto 82px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn,.bigbtn{border:0;border-radius:20px;padding:18px 12px;font-size:20px;font-weight:900;background:var(--card);box-shadow:var(--shadow);color:var(--ink);min-height:82px}
+.bigbtn{width:100%;margin:8px 0;text-align:left}
+.btn:active,.bigbtn:active{transform:scale(.98)}
+.green{background:#dff1e9}.gold{background:#fff0ce}.red{background:#ffe1db}.blue{background:#e2edf8}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:14px;margin:12px 0;box-shadow:var(--shadow)}
+.card h2{margin:0 0 10px;font-size:22px}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:12px 0}
+.row:first-of-type{border-top:0}
+.pill{display:inline-block;border-radius:999px;padding:6px 10px;font-size:13px;font-weight:900;background:#eee}
+.room{font-weight:900;color:var(--green)}
+input,select,textarea{width:100%;font-size:18px;padding:14px;border-radius:14px;border:1px solid var(--line);background:white;margin:6px 0 10px}
+label{font-weight:900;font-size:14px;color:var(--muted)}
+.hidden{display:none}
+.nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);gap:0;z-index:20}
+.nav button{border:0;background:white;padding:10px 4px;font-size:13px;font-weight:900;color:var(--ink)}
+.total{font-size:30px;font-weight:900;color:var(--green)}
+.itembtn{font-size:18px;min-height:68px;padding:12px}
+.danger{background:#ffe1db;color:#8a2416}
+.ok{background:#dff1e9;color:#174737}
+.notice{font-size:14px;background:#eef6f2;border:1px solid #cfe2da;border-radius:14px;padding:10px;margin-top:10px}
+@media (min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🏡 Zuhause am Bach Mobile</h1>
+  <div class="small">4 Zimmer • Gäste speichern • Extras zur Rechnung buchen</div>
+</header>
+
+<main>
+<section id="home">
+  <div class="grid">
+    <button class="btn green" onclick="show('bookings')">🛏 Buchungen</button>
+    <button class="btn blue" onclick="show('guests')">👥 Gäste</button>
+    <button class="btn gold" onclick="show('extras')">🍺 Extras</button>
+    <button class="btn green" onclick="show('invoice')">💶 Rechnung</button>
+  </div>
+  <div class="notice" id="installHint">Tipp: In Chrome über ⋮ → App installieren / Zum Startbildschirm hinzufügen.</div>
+  <div class="card">
+    <h2>Heute / Schnellzugriff</h2>
+    <div id="todayList"></div>
+  </div>
+  <div class="card">
+    <h2>Zimmer</h2>
+    <div id="roomStatus"></div>
+  </div>
+</section>
+
+<section id="bookings" class="hidden">
+  <button class="bigbtn green" onclick="newBooking()">➕ Neue Buchung</button>
+  <div class="card"><h2>Buchungen</h2><div id="bookingList"></div></div>
+</section>
+
+<section id="guests" class="hidden">
+  <button class="bigbtn green" onclick="newGuest()">➕ Neuen Gast hinzufügen</button>
+  <div class="card">
+    <h2>Gespeicherte Gäste</h2>
+    <input id="guestSearch" placeholder="Gast suchen..." oninput="renderGuests()">
+    <div id="guestList"></div>
+  </div>
+</section>
+
+<section id="editGuest" class="hidden">
+  <div class="card">
+    <h2 id="guestFormTitle">Gast</h2>
+    <input type="hidden" id="guestId">
+    <label>Name</label><input id="guestName">
+    <label>Telefon</label><input id="guestPhone">
+    <label>E-Mail</label><input id="guestEmail">
+    <label>Notizen</label><textarea id="guestNotes" rows="3"></textarea>
+    <button class="bigbtn green" onclick="saveGuest()">💾 Gast speichern</button>
+    <button class="bigbtn" onclick="show('guests')">Zurück</button>
+  </div>
+</section>
+
+<section id="editBooking" class="hidden">
+  <div class="card">
+    <h2 id="bookingFormTitle">Buchung</h2>
+    <input type="hidden" id="bookingId">
+    <label>Gast</label><select id="bookingGuest"></select>
+    <button class="bigbtn blue" onclick="newGuestFromBooking()">➕ Gast neu hinzufügen</button>
+    <label>Zimmer</label><select id="bookingRoom"></select>
+    <label>Anreise</label><input id="bookingArrival" type="date">
+    <label>Abreise</label><input id="bookingDeparture" type="date">
+    <label>Personen</label><input id="bookingPersons" type="number" min="1" value="2">
+    <label>Zimmerpreis pro Nacht</label><input id="bookingPrice" type="number" step="0.01" value="89">
+    <label>Frühstück</label>
+    <select id="bookingBreakfast"><option value="kein">kein</option><option value="normal">normal</option><option value="vegetarisch">vegetarisch</option><option value="vegan">vegan</option></select>
+    <button class="bigbtn green" onclick="saveBooking()">💾 Buchung speichern</button>
+    <button class="bigbtn danger" onclick="deleteBooking()">🗑 Buchung löschen</button>
+    <button class="bigbtn" onclick="show('bookings')">Zurück</button>
+  </div>
+</section>
+
+<section id="extras" class="hidden">
+  <div class="card"><h2>Gast / Buchung auswählen</h2><select id="activeBooking" onchange="setActiveBooking(this.value)"></select></div>
+  <div class="card"><h2>Getränke</h2><div class="grid" id="drinkButtons"></div></div>
+  <div class="card"><h2>Speisen</h2><div class="grid" id="foodButtons"></div></div>
+  <div class="card">
+    <h2>Freie Position</h2>
+    <label>Text</label><input id="customText" placeholder="z.B. Marillenkuchen">
+    <label>Betrag €</label><input id="customPrice" type="number" step="0.01" placeholder="0.00">
+    <button class="bigbtn green" onclick="addCustom()">➕ Zur Rechnung</button>
+  </div>
+</section>
+
+<section id="invoice" class="hidden">
+  <div class="card">
+    <h2>Rechnung / Extras</h2>
+    <select id="invoiceBooking" onchange="setActiveBooking(this.value)"></select>
+    <div id="invoiceDetails"></div>
+    <button class="bigbtn blue" onclick="copyInvoice()">📋 Rechnungstext kopieren</button>
+    <button class="bigbtn gold" onclick="exportJson()">⬇ Export JSON</button>
+    <button class="bigbtn danger" onclick="clearExtras()">🧹 Extras löschen</button>
+  </div>
+</section>
+</main>
+
+<nav class="nav">
+  <button onclick="show('home')">🏡 Heute</button>
+  <button onclick="show('bookings')">🛏 Buchung</button>
+  <button onclick="show('extras')">🍺 Extras</button>
+  <button onclick="show('invoice')">💶 Rechnung</button>
+</nav>
+
+<script>
+const rooms = ["DZ Bachblick", "Marillenzimmer", "Weinbergzimmer", "Donauzimmer"];
+const drinks = [["Cola",3.50],["Fanta",3.50],["Bier",4.00],["Radler",4.00],["Wein 1/8",3.80],["Mineral",2.80],["Kaffee",2.80],["Tee",2.50]];
+const foods = [["Frühstück",12.00],["Gulasch",12.00],["Schinkenplatte",11.00],["Gemischter Salat",7.50],["Grillteller klein",14.00],["Marillenkuchen",4.50]];
+let data = JSON.parse(localStorage.getItem("zabMobileV5Pages") || "null") || {
+  guests:[{id:"G1",name:"Devich Armin",phone:"",email:"",notes:""},{id:"G2",name:"Paul Artner",phone:"",email:"",notes:""}],
+  bookings:[], extras:{}, activeBooking:null
+};
+function save(){ localStorage.setItem("zabMobileV5Pages", JSON.stringify(data)); renderAll(); }
+function show(id){ document.querySelectorAll("main>section").forEach(s=>s.classList.add("hidden")); document.getElementById(id).classList.remove("hidden"); renderAll(); }
+function makeId(prefix){ return prefix + Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+function guestName(gid){ return (data.guests.find(g=>g.id===gid)||{}).name || "Unbekannt"; }
+function nights(a,d){ if(!a||!d) return 0; return Math.max(0, Math.round((new Date(d)-new Date(a))/(86400000))); }
+function renderAll(){ renderRoomSelects(); renderGuests(); renderBookings(); renderActiveSelects(); renderItems(); renderInvoice(); renderHome(); }
+function renderRoomSelects(){ let s=document.getElementById("bookingRoom"); if(s) s.innerHTML=rooms.map(r=>`<option>${r}</option>`).join(""); }
+function renderGuestSelect(){ let s=document.getElementById("bookingGuest"); s.innerHTML=data.guests.map(g=>`<option value="${g.id}">${g.name}</option>`).join(""); }
+function newGuest(){ guestFormTitle.textContent="Neuer Gast"; guestId.value=""; guestName.value=""; guestPhone.value=""; guestEmail.value=""; guestNotes.value=""; show("editGuest"); }
+function editGuest(gid){ let g=data.guests.find(x=>x.id===gid); if(!g) return; guestFormTitle.textContent="Gast bearbeiten"; guestId.value=g.id; guestName.value=g.name; guestPhone.value=g.phone||""; guestEmail.value=g.email||""; guestNotes.value=g.notes||""; show("editGuest"); }
+function saveGuest(){ let gid=guestId.value || makeId("G"); let g=data.guests.find(x=>x.id===gid); if(!g){ g={id:gid}; data.guests.push(g); } g.name=guestName.value.trim()||"Neuer Gast"; g.phone=guestPhone.value.trim(); g.email=guestEmail.value.trim(); g.notes=guestNotes.value.trim(); save(); show("guests"); }
+function newGuestFromBooking(){ newGuest(); }
+function renderGuests(){ let q=(document.getElementById("guestSearch")?.value||"").toLowerCase(); let list=document.getElementById("guestList"); if(!list) return; let rows=data.guests.filter(g=>g.name.toLowerCase().includes(q)|| (g.phone||"").includes(q)); list.innerHTML=rows.map(g=>`<div class="row" onclick="editGuest('${g.id}')"><div><b>${g.name}</b><br><span class="small">${g.phone||"keine Telefonnummer"}</span></div><span class="pill">öffnen</span></div>`).join("") || "<div class='small'>Keine Gäste gefunden.</div>"; }
+function newBooking(){ renderGuestSelect(); bookingFormTitle.textContent="Neue Buchung"; bookingId.value=""; bookingArrival.value=new Date().toISOString().slice(0,10); bookingDeparture.value=new Date(Date.now()+86400000).toISOString().slice(0,10); bookingPersons.value=2; bookingPrice.value=89; bookingBreakfast.value="kein"; bookingRoom.value=rooms[0]; show("editBooking"); }
+function editBooking(bid){ let b=data.bookings.find(x=>x.id===bid); if(!b) return; renderGuestSelect(); bookingFormTitle.textContent="Buchung bearbeiten"; bookingId.value=b.id; bookingGuest.value=b.guestId; bookingRoom.value=b.room; bookingArrival.value=b.arrival; bookingDeparture.value=b.departure; bookingPersons.value=b.persons; bookingPrice.value=b.price; bookingBreakfast.value=b.breakfast||"kein"; show("editBooking"); }
+function overlap(a1,d1,a2,d2){ return a1 < d2 && a2 < d1; }
+function saveBooking(){ let bid=bookingId.value || makeId("B"); let room=bookingRoom.value, a=bookingArrival.value, d=bookingDeparture.value; let conflict=data.bookings.find(b=>b.id!==bid && b.room===room && overlap(a,d,b.arrival,b.departure)); if(conflict){ alert("Doppelbelegung: "+room+" ist in diesem Zeitraum bereits von "+guestName(conflict.guestId)+" belegt."); return; } let b=data.bookings.find(x=>x.id===bid); if(!b){ b={id:bid}; data.bookings.push(b); } b.guestId=bookingGuest.value; b.room=room; b.arrival=a; b.departure=d; b.persons=Number(bookingPersons.value||1); b.price=Number(bookingPrice.value||0); b.breakfast=bookingBreakfast.value; data.activeBooking=bid; save(); show("bookings"); }
+function deleteBooking(){ let bid=bookingId.value; if(!bid) return show("bookings"); if(confirm("Buchung wirklich löschen?")){ data.bookings=data.bookings.filter(b=>b.id!==bid); delete data.extras[bid]; if(data.activeBooking===bid) data.activeBooking=null; save(); show("bookings"); } }
+function renderBookings(){ let list=document.getElementById("bookingList"); if(!list) return; let sorted=[...data.bookings].sort((a,b)=>a.arrival.localeCompare(b.arrival)); list.innerHTML=sorted.map(b=>`<div class="row" onclick="editBooking('${b.id}')"><div><b>${guestName(b.guestId)}</b><br><span class="room">${b.room}</span> · ${b.arrival} bis ${b.departure} · ${b.persons} Pers. · ${b.breakfast}</div><span class="pill">${nights(b.arrival,b.departure)} Nä.</span></div>`).join("") || "<div class='small'>Noch keine Buchungen.</div>"; }
+function renderActiveSelects(){ let opts=data.bookings.map(b=>`<option value="${b.id}">${b.room} – ${guestName(b.guestId)} (${b.arrival})</option>`).join(""); ["activeBooking","invoiceBooking"].forEach(id=>{ let s=document.getElementById(id); if(!s) return; s.innerHTML=opts || "<option>Keine Buchung</option>"; if(data.activeBooking) s.value=data.activeBooking; }); }
+function setActiveBooking(bid){ data.activeBooking=bid; save(); }
+function renderItems(){ let db=document.getElementById("drinkButtons"), fb=document.getElementById("foodButtons"); if(db) db.innerHTML=drinks.map(x=>`<button class="btn itembtn blue" onclick="addExtra('${x[0]}',${x[1]})">➕ ${x[0]}<br>${x[1].toFixed(2)} €</button>`).join(""); if(fb) fb.innerHTML=foods.map(x=>`<button class="btn itembtn gold" onclick="addExtra('${x[0]}',${x[1]})">➕ ${x[0]}<br>${x[1].toFixed(2)} €</button>`).join(""); }
+function addExtra(text,price){ let bid=data.activeBooking || data.bookings[0]?.id; if(!bid){ alert("Bitte zuerst eine Buchung anlegen/auswählen."); return; } data.activeBooking=bid; data.extras[bid]=data.extras[bid]||[]; data.extras[bid].push({id:makeId("E"),text,price:Number(price),qty:1,ts:new Date().toISOString()}); save(); alert(text+" zur Rechnung hinzugefügt."); }
+function addCustom(){ let t=customText.value.trim(), p=Number(customPrice.value||0); if(!t || !p){ alert("Bitte Text und Betrag eingeben."); return; } addExtra(t,p); customText.value=""; customPrice.value=""; }
+function clearExtras(){ let bid=data.activeBooking; if(!bid) return; if(confirm("Extras dieser Buchung löschen?")){ data.extras[bid]=[]; save(); } }
+function renderInvoice(){ let box=document.getElementById("invoiceDetails"); if(!box) return; let bid=data.activeBooking || data.bookings[0]?.id; data.activeBooking=bid; let b=data.bookings.find(x=>x.id===bid); if(!b){ box.innerHTML="<p>Keine Buchung ausgewählt.</p>"; return; } let ex=data.extras[bid]||[]; let roomTotal=nights(b.arrival,b.departure)*Number(b.price||0); let extraTotal=ex.reduce((s,e)=>s+e.price*e.qty,0); box.innerHTML=`<h2>${guestName(b.guestId)}</h2><p><b>${b.room}</b><br>${b.arrival} bis ${b.departure}</p><div class="row"><div>Zimmer</div><b>${roomTotal.toFixed(2)} €</b></div>${ex.map(e=>`<div class="row"><div>${e.qty}× ${e.text}</div><b>${(e.qty*e.price).toFixed(2)} €</b></div>`).join("")}<div class="row"><div class="total">Gesamt</div><div class="total">${(roomTotal+extraTotal).toFixed(2)} €</div></div>`; }
+function invoiceText(){ let bid=data.activeBooking || data.bookings[0]?.id; let b=data.bookings.find(x=>x.id===bid); if(!b) return ""; let ex=data.extras[bid]||[]; let roomTotal=nights(b.arrival,b.departure)*Number(b.price||0); let lines=[`Rechnung ${guestName(b.guestId)}`,`${b.room}: ${b.arrival} bis ${b.departure}`,`Zimmer: ${roomTotal.toFixed(2)} €`]; ex.forEach(e=>lines.push(`${e.qty}x ${e.text}: ${(e.qty*e.price).toFixed(2)} €`)); lines.push(`Gesamt: ${(roomTotal+ex.reduce((s,e)=>s+e.price*e.qty,0)).toFixed(2)} €`); return lines.join("\n"); }
+function copyInvoice(){ navigator.clipboard.writeText(invoiceText()); alert("Rechnungstext kopiert."); }
+function exportJson(){ let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}); let a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="zab_mobile_export.json"; a.click(); }
+function renderHome(){ let today=new Date().toISOString().slice(0,10); let todayBookings=data.bookings.filter(b=>b.arrival<=today && b.departure>=today); let tl=document.getElementById("todayList"); if(tl) tl.innerHTML=todayBookings.map(b=>`<div class="row"><div><b>${guestName(b.guestId)}</b><br><span class="room">${b.room}</span> · ${b.breakfast}</div><span class="pill">${b.persons} Pers.</span></div>`).join("") || "<div class='small'>Heute keine aktive Buchung.</div>"; let rs=document.getElementById("roomStatus"); if(rs) rs.innerHTML=rooms.map(r=>{ let b=todayBookings.find(x=>x.room===r); return `<div class="row"><div class="room">${r}</div><span class="pill ${b?'blue':'ok'}">${b?guestName(b.guestId):'frei'}</span></div>` }).join(""); }
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("./sw.js").catch(()=>{}); }
+window.addEventListener("beforeinstallprompt", e=>{ window.deferredPrompt=e; document.getElementById("installHint").textContent="Chrome: Diese App kann installiert werden. Menü ⋮ oder Installieren-Hinweis verwenden."; });
+renderAll();
+</script>
+</body>
+</html>

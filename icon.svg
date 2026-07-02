@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="96" fill="#2f5d50"/>
+<path d="M96 275 256 132l160 143v145a24 24 0 0 1-24 24H120a24 24 0 0 1-24-24z" fill="#fff3d4"/>
+<path d="M80 272 256 112l176 160" fill="none" stroke="#d89b34" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="174" cy="324" r="36" fill="#456c93"/>
+<circle cx="256" cy="324" r="36" fill="#d89b34"/>
+<circle cx="338" cy="324" r="36" fill="#b64735"/>
+<text x="256" y="470" font-size="44" text-anchor="middle" fill="white" font-family="Arial" font-weight="700">ZAB</text>
+</svg>
