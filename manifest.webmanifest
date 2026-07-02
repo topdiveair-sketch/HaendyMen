@@ -1,7 +1,7 @@
 {
   "name": "Zuhause am Bach Mobile",
   "short_name": "ZAB Mobile",
-  "description": "Mobile Arbeits-App für Zuhause am Bach: Gäste, Buchungen, Extras und Rechnung.",
+  "description": "Mobile Arbeits-App für Zuhause am Bach.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
