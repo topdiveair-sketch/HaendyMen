@@ -1,0 +1,21 @@
+Zuhause am Bach OS – Sprint 6
+Finanzen/Gemeinde modularisiert + Gloria-Freigabe
+
+Geändert:
+- Neues Modul: manager/modules/finanzen.py
+- Zentrale Druck-/Exportfreigaben für Rechnung und Gemeinde/Ortstaxe
+- Rechnung-PDF ruft vor Erstellung Gloria-Freigabe auf
+- Gemeinde-PDF ruft vor Erstellung Gloria-Freigabe auf
+- Kritische Fehler blockieren den Druck
+- Warnungen können bewusst bestätigt werden
+- Monatsabschluss-Kennzahlen als testbare Logik vorbereitet
+- Versionsanzeige: V30.6
+- Startdateien auf V30.6 angepasst
+
+Geprüft:
+- Syntaxprüfung bestanden
+- 28 Tests bestanden
+
+Wichtig:
+- Noch keine vollständige optische Neugestaltung.
+- Dieser Sprint verbessert Stabilität und Datenqualität vor dem Drucken.

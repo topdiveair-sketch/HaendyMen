@@ -1,0 +1,23 @@
+Zuhause am Bach OS V30.5 – Sprint 5 Gloria Quality Center modularisiert
+
+[Fakt] Ziel:
+Glorias Kontrolllogik wurde als eigenständiges, GUI-freies Quality-Center ausgebaut.
+Damit können Stammdaten, Gemeinde-/Ortstaxe-relevante Daten, offene Zahlungen,
+Rechnungsstatus und Backup-Zustand zentral geprüft werden.
+
+Geändert:
+- Neues Modul: manager/brain/gloria_quality.py
+- Gloria-API manager/brain/gloria.py nutzt jetzt das neue Quality-Center.
+- QualityIssue und QualityReport eingeführt.
+- Ampel-Logik: ok / info / warnung / kritisch.
+- Ausgabe bleibt kompatibel mit BrainItem / Faktenmodus.
+- Tests für fehlende Stammdaten, Gemeinde-Daten und Backup-Prüfung ergänzt.
+- Versionsanzeige auf V30.5 geändert.
+
+Bewusst nicht geändert:
+- Keine neue Oberfläche erfunden.
+- Keine neue doppelte Kontrollfunktion eingebaut.
+- Gloria ist jetzt der zentrale Besitzer für Prüf-/Kontrolllogik.
+
+Nächster sinnvoller Sprint:
+Sprint 6 – Finanzen/Gemeinde modularisieren und Gloria-Freigabe vor PDF-Druck vorbereiten.

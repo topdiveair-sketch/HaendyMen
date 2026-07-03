@@ -1,0 +1,16 @@
+Zuhause am Bach OS V31.11 RC3 – Pia Kommunikationscenter
+
+Geändert:
+- Pia-Kommunikationslogik als testbares Modul manager/modules/pia_communication.py angelegt.
+- Bestehende WhatsApp-Zentrale sichtbarer als 🎀 Pia Kommunikation benannt.
+- Pia bereitet Begrüßung, Frühstücksfrage, Ankunftszeitfrage, Bewertungsanfrage und Danke-Nachricht vor.
+- Versand bleibt manuell: der Manager öffnet nur vorbereitete Kommunikation.
+- Keine neue doppelte WhatsApp-Funktion: vorhandener Gäste-/WhatsApp-Bereich bleibt der zentrale Einstieg.
+- Versionsanzeige auf V31.11 RC3 angepasst.
+
+Geprüft:
+- Syntaxprüfung durchgeführt.
+- Tests um Pia-Kommunikation erweitert.
+
+Hinweis:
+- Diese Änderung ist bewusst klein und stabil: erst Logik und klare Zuständigkeit, danach UI-Ausbau.

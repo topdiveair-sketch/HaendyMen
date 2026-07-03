@@ -1,0 +1,11 @@
+Sprint 7 – Mission Control 2.0 / Betriebskompass
+
+Umgesetzt:
+- Betriebskompass als GUI-freies Modul manager/brain/betriebskompass.py angelegt.
+- Mission Control zeigt jetzt kompakte Ampeln für Gäste, Finanzen, Daten, Frühstück, Müll, Preis und Backup.
+- Mülltermine von Gloria werden direkt in den Betriebskompass übernommen.
+- Revenue-Signal wird in eine kurze Preis-Ampel übersetzt.
+- Versionsanzeige auf V30.7 angepasst.
+
+Ziel:
+Morgens weniger Tabellen und mehr Sofortüberblick.

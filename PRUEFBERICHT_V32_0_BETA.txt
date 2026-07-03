@@ -1,0 +1,26 @@
+Zuhause am Bach OS V32.0 BETA – Prüfbericht
+===========================================
+
+Stand: Konsolidierte Gesamtversion aus V31.11 RC3.
+
+Prüfung:
+- Syntaxprüfung: bestanden
+- Automatisierte Tests: 62 bestanden
+- Startdatei: START_MANAGER.bat auf V32.0 BETA angepasst
+- Debug-Startdatei vorhanden
+
+Wichtige enthaltene Funktionen:
+- Buchungen manuell anlegen/ändern/löschen
+- Kalender mit Tageszentrale und Müllterminen
+- Gemeindeausdruck: Querformat, ohne Logo, ohne Geburtsdatum
+- Gemeindeausdruck auch bei fehlenden Daten
+- Ortstaxe: Personen x Nächte x 2,60 EUR
+- Import: Vorschau, Dedupe, Protokoll, Rückgängig
+- Pia Kommunikationscenter
+- Laura-Modus
+- Frühstücks-/Einkaufsassistent
+- Smart Workflow
+- Gastprofil 360
+
+Hinweis:
+BETA-Version. Bitte in neuem Ordner entpacken und mit Test-/Kopiedaten prüfen.

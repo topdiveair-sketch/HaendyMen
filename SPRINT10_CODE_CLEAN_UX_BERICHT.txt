@@ -1,0 +1,25 @@
+Zuhause am Bach OS – Sprint 10 / V31.1 RC1
+Code Clean & UX
+
+Umgesetzt:
+- Versionsanzeige auf V31.1 RC1 geändert.
+- Startdateien auf V31.1 RC1 angepasst.
+- Doppelte Preis-/Chancen-Reiter aus der sichtbaren System-Navigation entfernt.
+  Die technische Logik bleibt vorhanden, wird aber über Kalender/Fidel genutzt.
+- Neue zentrale Funktionsmatrix unter manager/ux/function_registry.py.
+- Jede Kernfunktion hat nun einen fachlichen Besitzer:
+  Fidel: Kalender, Revenue, Preis, Statistik/Entscheidung
+  Gloria: Gemeinde, Rechnung, Backup, Faktencheck, Müll
+  Pia: Buchungen, Gastprofil, WhatsApp/Gäste
+  Laura: Laura-Modus
+- Gemeindebericht bleibt ohne Geburtsdatum in der sichtbaren PDF-Tabelle.
+- __pycache__ und alte Test-Caches wurden aus dem Paket entfernt.
+- FUNKTIONSMATRIX_V31.md beigelegt.
+
+Geprüft:
+- Python Syntaxprüfung bestanden.
+- Pytest: 38 Tests bestanden.
+
+Hinweis:
+- Dies ist ein echter Bereinigungssprint, kein kompletter UI-Neubau.
+- Der nächste sinnvolle Sprint ist Mission Control visuell vereinfachen und Startseite auf Kartenlayout trimmen.

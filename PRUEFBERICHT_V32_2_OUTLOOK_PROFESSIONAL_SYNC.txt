@@ -1,0 +1,13 @@
+Zuhause am Bach OS V32.2 BETA – Prüfbericht
+
+Geändert:
+- Kalenderexport Outlook-kompatibel überarbeitet.
+- Hauptfehler der hochgeladenen ICS erkannt: CRCRLF (\r\r\n) durch Textmodus-Schreiben auf Windows.
+- Export schreibt ICS jetzt bytegenau per write_bytes().
+- Lange DESCRIPTION-Texte gekürzt.
+- METHOD:PUBLISH entfernt.
+- Zusätzliche Tests für CRCRLF, Datei-Schreiben, Validator und CSV-Fallback.
+
+Ergebnis:
+- Syntaxprüfung: bestanden
+- Tests: 69 bestanden

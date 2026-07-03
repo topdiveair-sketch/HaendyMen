@@ -1,0 +1,33 @@
+Zuhause am Bach OS V27.1 – Funktionsprüfung
+============================================
+
+Prüfumfang:
+- ZIP-Struktur geöffnet und kontrolliert
+- Python-Syntaxprüfung aller Python-Dateien
+- Pytest-Testlauf
+- Startdatei START_MANAGER.bat geprüft
+- Headless-Starttest mit virtuellem Bildschirm
+- PreisAgent-Grundlogik geprüft
+- Windi-Rollen geprüft
+- Hilfsfunktionen Geldformat, Nächte, Transliteration geprüft
+- Prüfung auf doppelte App-Methoden
+
+Ergebnis:
+[OK] Alle Python-Dateien kompilieren ohne Syntaxfehler.
+[OK] 5 Tests bestanden.
+[OK] Startdatei zeigt auf die aktuelle Hauptdatei.
+[OK] Programm startet im Headless-Test ohne Sofortabsturz.
+[OK] PreisAgent hält Preisdeckel ein.
+[OK] Windi-Rollen sind vorhanden: Fidel, Gloria, Pia.
+
+Gefundene und bereinigte Punkte:
+[FIX] Doppelte Methode build_sync entfernt. Die ältere Google-Drive-only-Version wurde von der neuen Kalender+Cloud-Version überschrieben und war unnötig.
+[FIX] __pycache__ und .pytest_cache aus der Release-Struktur entfernt.
+[FIX] Tests aktualisiert, damit sie auf V27.1 prüfen.
+
+Hinweis:
+Eine vollständige manuelle Klickprüfung aller GUI-Buttons ist in dieser Umgebung nur eingeschränkt möglich. Der Starttest zeigt aber: Das Hauptfenster kann erzeugt werden, ohne sofort mit einem Python-Fehler abzubrechen.
+
+Empfehlung nächste Qualitätsstufe:
+- echte GUI-Klicktests für die wichtigsten Wege: Buchung speichern, Rechnung PDF, Gemeinde PDF, WhatsApp-Vorschau, Kalender-ICS.
+- automatische Testdaten-Datei verwenden, damit Tests keine Produktivdaten anfassen.

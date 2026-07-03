@@ -1,0 +1,12 @@
+Zuhause am Bach OS V31.9 RC2 – Import-Vorschau & Protokoll
+
+Geändert:
+- Importbereich ergänzt: IMPORT VORSCHAU und IMPORT ÜBERNEHMEN
+- Vorschau speichert nichts in die Datenbank
+- Vorschau klassifiziert Zeilen als Neu, Aktualisieren, Bekannter Gast/neue Reise, Prüfen, Überspringen, Fehler
+- Import-Protokoll wird als TXT in Ausgaben gespeichert
+- Übernahme bleibt separat und erstellt weiterhin ein Backup vor Import
+
+Geprüft:
+- Syntaxprüfung: bestanden
+- Import-Vorschau-Funktion im Code vorhanden

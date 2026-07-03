@@ -1,0 +1,23 @@
+Zuhause am Bach OS V31.7 RC2
+Pruefbericht: Import ohne doppelte Gaeste
+
+Aenderungen:
+- Neues Modul: manager/modules/import_dedupe.py
+- Intelligenter Dublettencheck fuer Booking-/CSV-Import.
+- Gleiche Booking-Nummer wird aktualisiert, nicht neu angelegt.
+- Gleiche Telefonnummer + gleiche Reisedaten wird aktualisiert, auch wenn der Name leicht anders geschrieben ist.
+- Bekannter Gast mit neuer Reise wird als neue Buchung mit vorhandenem Gastwissen behandelt.
+- Manuell gepflegte Stammdaten werden bei leeren Importfeldern erhalten.
+- Importprotokoll zeigt bekannte Gaeste/neue Reise.
+
+Sicherheitsregeln:
+- Keine automatische Internet- oder Social-Media-Recherche.
+- Unsichere Zuordnungen werden nicht aggressiv zusammengefuehrt.
+- Der Import ueberschreibt keine manuell gepflegten Stammdaten mit leeren Booking-Werten.
+
+Pruefung:
+- Syntaxpruefung bestanden.
+- Automatische Tests bestanden: 54 / 54.
+
+Stand:
+- Version: 31.7 RC2 - Import ohne doppelte Gaeste.

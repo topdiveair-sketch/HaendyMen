@@ -1,0 +1,22 @@
+Zuhause am Bach OS V28.0 – Windi Brain
+Prüfbericht
+
+Ergebnis:
+- Syntaxprüfung bestanden
+- 6 Tests bestanden
+- Startdatei auf V28.0 geprüft
+- Alte V27-Testdatei entfernt
+
+Neu in V28.0:
+- Windi Brain als lernender Bereich im System-Menü
+- Fidel lernt Preis-/Nachfragemuster
+- Gloria lernt wiederkehrende Daten- und Kontrollprobleme
+- Pia lernt Gäste- und Kommunikationsmuster
+- Buchungsereignisse werden in windi_brain_events.csv protokolliert
+- Lernvorschläge werden mit Freigabe in windi_brain_rules.json gespeichert
+- Lernbericht exportierbar
+
+Sicherheitsprinzip:
+- Das Programm ändert niemals automatisch seinen eigenen Quellcode.
+- Regeln und Vorschläge werden nur gespeichert und müssen durch Johann/Laura geprüft werden.
+- Automatisches Lernen verbessert Empfehlungen, nicht unkontrolliert den Programmcode.

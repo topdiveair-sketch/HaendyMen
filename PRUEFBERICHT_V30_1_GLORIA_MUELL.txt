@@ -1,0 +1,18 @@
+Zuhause am Bach OS V30.1 - Gloria Müllmanager integriert
+
+Prüfung:
+- Syntaxprüfung: bestanden
+- Pytest: 9 Tests bestanden
+- Startdatei: START_MANAGER.bat startet zuhause_am_bach_os_v300_foundation.py
+- Version im Programm: Version 30.1 Foundation – Gloria Müllmanager integriert
+- Müllmanager: CSV geladen, ICS vorhanden, Reiter wird im Systembereich eingebaut
+
+Neue Dateien:
+- abfuhrtermine_aggsbach_markt_2026.csv
+- Gloria_Muell_Erinnerungen_Aggsbach_Markt_2026.ics
+
+Neue Bedienung:
+- System -> Gloria Müll
+- Button: ICS für Outlook/Google öffnen
+- Button: CSV öffnen
+- Start-Hinweis, wenn morgen Müllabholung ist

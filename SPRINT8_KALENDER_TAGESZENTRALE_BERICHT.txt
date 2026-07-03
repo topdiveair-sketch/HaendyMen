@@ -1,0 +1,22 @@
+Sprint 8 – Kalender Tageszentrale
+
+Ziel:
+Der Kalender wird weiter zur zentralen Arbeitsansicht ausgebaut. Tagesdetails sollen nicht mehr nur Revenue zeigen, sondern Buchungen, Anreise/Abreise, Mülltermine und Aufgaben in einer gemeinsamen Tageskarte.
+
+Geändert:
+- Neues testbares Modul: manager/modules/day_center.py
+- Tageszentrum sammelt:
+  - Anreisen
+  - Abreisen
+  - Im-Haus-Gäste
+  - Frühstücksaufgaben
+  - Mülltermine
+  - Revenue-Signal
+- Doppelklick auf freien Tag öffnet jetzt Kalender-Tageszentrale statt nur Revenue-Text.
+- Mülltermine werden direkt im Monatskalender als kurze Labels angezeigt.
+- Statuszeile zählt Mülltermine im angezeigten Monat.
+- Version auf V30.8 angepasst.
+
+Wichtig:
+- Keine neue Doppelfunktion: Das Modul ist reine Tageslogik und wird künftig von Kalender, Mission Control und PDF gemeinsam genutzt.
+- Tkinter-GUI bleibt weiterhin in der Hauptdatei, die Logik ist aber ausgelagert und testbar.

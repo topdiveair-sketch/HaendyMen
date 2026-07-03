@@ -1,0 +1,19 @@
+Zuhause am Bach OS – Sprint 11 / V31.2 RC2
+
+Ziel:
+- Priorität A weiter umsetzen: Frühstücks- und Einkaufsassistent ohne doppelte neue Menüs.
+
+Umgesetzt:
+- Neues testbares Modul: manager/modules/fruehstueck.py
+- Laura-Modus erweitert: Bereich "Frühstück / Einkauf morgen"
+- Einkaufsliste wird aus Buchungen mit Frühstück für den nächsten Morgen berechnet.
+- Button "Einkauf kopieren" ergänzt.
+- Keine neue Hauptnavigation, keine doppelte Einkaufsliste: Einstieg über Laura-Modus.
+- Versionsanzeige auf V31.2 RC2 angepasst.
+
+Prüfung:
+- Syntaxprüfung bestanden.
+- 40 Tests bestanden.
+
+Hinweis:
+- Mengen sind Gastgeber-Richtwerte, keine automatische Warenwirtschaft.

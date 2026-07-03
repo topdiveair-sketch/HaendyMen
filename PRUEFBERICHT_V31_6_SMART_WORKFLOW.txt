@@ -1,0 +1,19 @@
+Zuhause am Bach OS V31.6 RC2 – Smart Workflow
+
+Geändert:
+- Neues Modul manager/modules/workflow.py
+- Check-in-Assistent für heutige Anreisen
+- Check-out-Assistent für heutige Abreisen
+- Automatische Tagesaufgaben für Frühstück, Reinigung, Zahlung/Rechnung, Bewertung
+- Neuer Systembereich: ✅ Workflow
+- Tagesablauf kann in die Zwischenablage kopiert werden
+- Aufgaben können per Doppelklick abgehakt werden
+- Versionsanzeige auf V31.6 RC2 angepasst
+
+Geprüft:
+- Syntaxprüfung bestanden
+- 49 automatisierte Tests bestanden
+
+Hinweis:
+- Der Workflow ist eine geführte Tagesliste. Er verändert keine Buchungen automatisch.
+- Kommunikation, Zahlungen oder Preisänderungen erfolgen weiterhin nur nach manueller Freigabe.

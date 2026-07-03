@@ -1,0 +1,859 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Zuhause am Bach OS//Gloria Muellkalender Aggsbach 2026//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Gloria Müll-Erinnerungen Aggsbach Markt 2026
+X-WR-TIMEZONE:Europe/Vienna
+BEGIN:VEVENT
+UID:5a6752d8-539f-4fa8-a82e-0ad8d79c5ad8@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260701T180000
+DTEND;TZID=Europe/Vienna:20260701T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-02) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:414d138d-21a6-406a-8d39-efdc293a2a60@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260703
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7a7beea2-8f4f-4cf6-be69-a2f74d989504@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260706T180000
+DTEND;TZID=Europe/Vienna:20260706T183000
+SUMMARY:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-07) wird Gelber Sack / Kunststoff abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a798a65e-1314-4d6e-bda6-e738683402b1@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:Abholung: Gelber Sack / Kunststoff
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6f2b7e7a-0ce3-4d4e-a66d-1370b5260b8e@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260708T180000
+DTEND;TZID=Europe/Vienna:20260708T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-09) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0044afc0-5292-456b-b164-12843a22916d@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260709
+DTEND;VALUE=DATE:20260710
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6c8bb0b0-cce3-446e-80c6-d8fba75236c1@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260713T180000
+DTEND;TZID=Europe/Vienna:20260713T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-14) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f6442d00-a684-4b18-8345-6752e3941052@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0b683972-7b07-42f9-a3df-3377eb80ae58@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260715T180000
+DTEND;TZID=Europe/Vienna:20260715T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-16) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:19c01ee0-ce03-4514-b58f-e7edf9d23c8d@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260717
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:61978fa9-8a13-4ab2-a455-2258b35da5ee@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260722T180000
+DTEND;TZID=Europe/Vienna:20260722T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-23) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:08f64f09-e8bb-4e5c-b282-e3c69228c722@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4a8f1b6c-040a-4788-adf1-d48ffda39628@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260729T180000
+DTEND;TZID=Europe/Vienna:20260729T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-07-30) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f2cc7d1a-b325-4cf9-9845-dc0f5bb28c4b@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20260731
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2d748271-e415-44b6-a554-13f906bf1cb5@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260802T180000
+DTEND;TZID=Europe/Vienna:20260802T183000
+SUMMARY:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-03) wird Altpapier / Papiertonne abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7e4f8605-ac96-4ada-9572-2575f37a5c92@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:Abholung: Altpapier / Papiertonne
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:80d09699-db71-4dd8-b0cb-c89acbf92a09@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260805T180000
+DTEND;TZID=Europe/Vienna:20260805T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-06) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ce44ff56-e9e6-48ab-b6eb-e46cc546c597@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:744d2a65-0b65-46d8-b8ac-0322c4d95420@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260810T180000
+DTEND;TZID=Europe/Vienna:20260810T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-11) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5371b6a1-473a-461c-b6e3-155570a04ef9@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e96b3138-0016-4fa2-9f48-a80525388bd4@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260812T180000
+DTEND;TZID=Europe/Vienna:20260812T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-13) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e6d0c9e9-01a6-4f79-9f86-ebdae03bdde5@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7c7a934a-9f28-4627-9b7b-74de6c036e3c@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260817T180000
+DTEND;TZID=Europe/Vienna:20260817T183000
+SUMMARY:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-18) wird Gelber Sack / Kunststoff abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8e1be942-1b45-4fc0-82c8-c66f44734e6c@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Abholung: Gelber Sack / Kunststoff
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a6df0ddd-1be3-4c8d-82fb-e19a773e3e39@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260819T180000
+DTEND;TZID=Europe/Vienna:20260819T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-20) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3c01cb19-8e3f-48de-95de-24da2bddf25a@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a566198c-4b14-4ac8-a3c1-ed7e61d8e891@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260826T180000
+DTEND;TZID=Europe/Vienna:20260826T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-08-27) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c6314cc5-ee47-4368-94a2-a7df4b5b098f@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:205a7766-4850-43b1-bd97-51948a22207b@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260902T180000
+DTEND;TZID=Europe/Vienna:20260902T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-03) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:12188a37-cba9-466e-a82d-d628d7ab256a@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5e34c492-0c5c-493c-8dc0-b6097176f7a9@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260907T180000
+DTEND;TZID=Europe/Vienna:20260907T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-08) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:060c20ee-c4c8-440a-af51-bf7a38bf2ef5@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:76b6fd5b-0300-4afa-9253-6034acd93ade@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260909T180000
+DTEND;TZID=Europe/Vienna:20260909T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-10) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:faf4dbcd-8d4b-4a59-a5d3-be61ac6baa6f@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:792f8778-3288-4d8e-9861-cc491a5fdb17@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260916T180000
+DTEND;TZID=Europe/Vienna:20260916T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-17) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:86b9dc58-4249-490f-b49b-9510eb21f467@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:864c736b-858b-4afd-a96c-c84ee101c04d@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260923T180000
+DTEND;TZID=Europe/Vienna:20260923T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-24) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:684d09ae-2730-4ee1-b663-a9469daccb48@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:48b3a95e-e4fa-41b0-be2d-f42ec6573cba@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260927T180000
+DTEND;TZID=Europe/Vienna:20260927T183000
+SUMMARY:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-28) wird Altpapier / Papiertonne abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:172ca9f6-a094-4479-9477-47b4fce9635f@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Abholung: Altpapier / Papiertonne
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c6854312-ffff-46dc-9863-6a0a2bb7e0d3@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260928T180000
+DTEND;TZID=Europe/Vienna:20260928T183000
+SUMMARY:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-09-29) wird Gelber Sack / Kunststoff abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3afd22b0-1550-4d3b-97e9-49472b6c7dc4@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Abholung: Gelber Sack / Kunststoff
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9c8fabcb-6212-41fa-86c6-112de0471258@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20260930T180000
+DTEND;TZID=Europe/Vienna:20260930T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-10-01) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:18976a5b-178a-46f8-9d37-671921b34b5e@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:13a0314b-47e6-482c-aebe-8f53327b85c8@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261005T180000
+DTEND;TZID=Europe/Vienna:20261005T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-10-06) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:556af0cf-71f7-47e1-9609-e217d03eed7d@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:74a07e52-282c-42d0-8a70-9e29ef2d0f5e@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261007T180000
+DTEND;TZID=Europe/Vienna:20261007T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-10-08) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:33f9ae5d-221a-4455-b031-5953527151a8@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5478b4f6-4585-4c75-b68c-da16a02180c6@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261014T180000
+DTEND;TZID=Europe/Vienna:20261014T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-10-15) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7bd0b757-9ea7-47b6-b767-9f8d0c65daa9@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a3153ffb-70aa-4554-a3f9-bd450413e1f5@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261021T180000
+DTEND;TZID=Europe/Vienna:20261021T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-10-22) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fc3cee97-292c-41d6-9fe2-6f5df45ca63a@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9ab6dbf7-fecc-4182-92f9-9ba980af8301@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261102T180000
+DTEND;TZID=Europe/Vienna:20261102T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-11-03) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c09b256d-31d9-4a1a-88fe-3bf2f21ecd45@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f1716da3-8a36-47e2-95f9-17a4ccf0f0e4@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261104T180000
+DTEND;TZID=Europe/Vienna:20261104T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-11-05) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0dee7b9c-d694-497d-b159-d0f6c1f3ee18@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ea363d24-bac1-4920-8fc6-bd53c7d63338@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261110T180000
+DTEND;TZID=Europe/Vienna:20261110T183000
+SUMMARY:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-11-11) wird Gelber Sack / Kunststoff abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7b6a2c16-d15d-429b-ac54-5b5c8712866c@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Abholung: Gelber Sack / Kunststoff
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca108af-39fa-4638-9428-05b2e8faa393@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261118T180000
+DTEND;TZID=Europe/Vienna:20261118T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-11-19) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4b309875-84b7-4dc5-bf81-51d539c11ef8@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6fda4cb2-2a89-4ae2-b975-ea05d1765d86@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261122T180000
+DTEND;TZID=Europe/Vienna:20261122T183000
+SUMMARY:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-11-23) wird Altpapier / Papiertonne abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Altpapier / Papiertonne hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:16dd538f-db7c-468f-9037-22fc3c45cdaf@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Abholung: Altpapier / Papiertonne
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9d1eef40-1fd5-4201-8c8b-b00741b29946@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261130T180000
+DTEND;TZID=Europe/Vienna:20261130T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-01) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dd6161b9-25eb-4fa3-a2a9-01be551285d3@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:85ab095e-4628-4a9b-9c60-6c7d445ff94f@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261202T180000
+DTEND;TZID=Europe/Vienna:20261202T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-03) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0a19547e-8c99-4841-9ac7-edd4b73ffae8@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7ac5be2b-7c4b-46f1-a36c-1e2667ad00fb@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261216T180000
+DTEND;TZID=Europe/Vienna:20261216T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-17) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d6fb676c-cefd-4b7d-afb2-9f63acd71f92@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b17ab4d9-06d0-44c0-b4a8-79245cfdfca1@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261221T180000
+DTEND;TZID=Europe/Vienna:20261221T183000
+SUMMARY:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-22) wird Gelber Sack / Kunststoff abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Gelber Sack / Kunststoff hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1d05e705-c499-48e0-9d2b-63884da16c00@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Abholung: Gelber Sack / Kunststoff
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bfbb4371-0a8c-4d41-b354-edfd8a348d39@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261228T180000
+DTEND;TZID=Europe/Vienna:20261228T183000
+SUMMARY:Gloria: Morgen Restmüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-29) wird Restmüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Restmüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:94c888e2-438a-428d-a298-3e972aefd502@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:Abholung: Restmüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:93951de8-59f6-4e46-b115-9a233406f7b9@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;TZID=Europe/Vienna:20261230T180000
+DTEND;TZID=Europe/Vienna:20261230T183000
+SUMMARY:Gloria: Morgen Biomüll hinausstellen
+DESCRIPTION:Erinnerung für Zuhause am Bach: Morgen (2026-12-31) wird Biomüll abgeholt. Tonne/Sack am Vorabend bereitstellen. Quelle: Marktgemeinde Aggsbach Müllkalender 2026.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gloria: Morgen Biomüll hinausstellen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b2dbcd7c-88f7-42fa-a9a0-498a6da77beb@zuhause-am-bach-os
+DTSTAMP:20260630T120157Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Abholung: Biomüll
+DESCRIPTION:Abholtermin laut Marktgemeinde Aggsbach Müllkalender 2026.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

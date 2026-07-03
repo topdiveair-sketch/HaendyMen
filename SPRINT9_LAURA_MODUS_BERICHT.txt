@@ -1,0 +1,14 @@
+Sprint 9 – Laura-Modus
+
+Umgesetzt:
+- Neues Modul manager/modules/laura_mode.py
+- Laura-Tagesplan ohne Tkinter-Logik testbar gemacht
+- Aufgaben fuer Reinigung, Anreisevorbereitung, Waesche, Fruehstueck und Muell morgen
+- GUI-Reiter System -> ❤️ Laura integriert
+- Aufgaben lassen sich per Doppelklick abhaken
+- Tagesliste kann in Zwischenablage kopiert werden
+- Versionsanzeige auf V30.9 angepasst
+
+Wichtig:
+- Der Laura-Modus ist bewusst einfach gehalten: grosse Tagesaufgaben statt Verwaltungsdetails.
+- Er ersetzt keine Buchungslogik, sondern nutzt vorhandene Buchungsdaten.

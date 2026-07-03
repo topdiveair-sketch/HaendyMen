@@ -1,0 +1,11 @@
+Zuhause am Bach OS V31.10 RC2
+
+Änderung:
+- Import kann über das letzte VOR_IMPORT_*.json Backup rückgängig gemacht werden.
+- Neuer Button im Booking-Import: IMPORT RÜCKGÄNGIG.
+- Vor der Wiederherstellung wird der aktuelle Datenstand als VOR_RESTORE_*.json gesichert.
+- Backup wird vor dem Einspielen auf gültiges JSON geprüft.
+
+Hinweis:
+- Diese Funktion stellt den kompletten Datenstand vor dem Import wieder her.
+- Sie ist für Fehlimporte gedacht.

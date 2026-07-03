@@ -1,0 +1,15 @@
+Zuhause am Bach OS V32.3 BETA – Stabilitätsfix Fehlerprotokolle
+
+Geändert:
+- parse_date als kompatibler Alias auf pdate ergänzt.
+- Gastprofil-Modul korrekt angebunden: profile_from_booking als guestprofile_from_booking.
+- OneDrive/JSON-Speichern robuster gemacht: Ordneranlage, temporäre Datei prüfen, dann ersetzen.
+- Notebook-Tab-Wechsel abgesichert, damit falsche Tab-Referenzen keinen TclError mehr auslösen.
+- Startdateien auf V32.3 BETA angepasst.
+
+Geprüft:
+- Syntaxprüfung bestanden.
+- 69 Tests bestanden.
+
+Hinweis:
+- Neue Funktionen wurden bewusst nicht eingebaut. Diese Version ist ein Stabilitätsfix.

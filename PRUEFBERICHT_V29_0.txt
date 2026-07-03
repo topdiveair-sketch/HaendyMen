@@ -1,0 +1,18 @@
+Prüfbericht Zuhause am Bach OS V29.0
+
+Durchgeführt:
+- Python Syntaxprüfung: bestanden
+- V29 Funktionstests: 5 bestanden
+- Startdatei geprüft: START_MANAGER.bat startet zuhause_am_bach_os_v290_betriebsstabilitaet.py
+- Debug-Start vorhanden: START_DEBUG_MIT_PAUSE.bat
+
+Neue geprüfte Kernpunkte:
+- Gloria Faktencheck vorhanden
+- Tagesmodus vorhanden
+- Import-Vorschau vorhanden
+- Backup/Wiederherstellung vorhanden
+- Datenbank-Wartung vorhanden
+- KI-Faktenmodus vorhanden
+
+Hinweis:
+Ein echter Windows-Klicktest muss lokal am Ziel-PC erfolgen.

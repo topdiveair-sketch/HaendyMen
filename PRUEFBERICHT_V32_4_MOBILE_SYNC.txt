@@ -1,0 +1,22 @@
+Zuhause am Bach OS V32.4 BETA – Mobile Sync Export
+
+Geprüft:
+- Syntaxprüfung bestanden
+- 73 Tests bestanden
+- Neues Modul manager/modules/mobile_sync.py geprüft
+- mobile_data.json Export getestet
+
+Neu:
+- System / Sync: Button 📱 MOBILE-DATEN ERZEUGEN
+- Mobile-Ordner öffnen
+- Export nach Datenordner/Mobile/mobile_data.json
+- Struktur kompatibel mit Zuhause am Bach Mobile GitHub Pages App
+- 4 Basiszimmer immer enthalten:
+  - DZ Bachblick
+  - Marillenzimmer
+  - Weinbergzimmer
+  - Donauzimmer
+
+Hinweis:
+Die Handy-App liest docs/data/mobile_data.json auf GitHub Pages.
+Der Manager erzeugt lokal Mobile/mobile_data.json. Diese Datei muss anschließend nach GitHub Pages hochgeladen werden.

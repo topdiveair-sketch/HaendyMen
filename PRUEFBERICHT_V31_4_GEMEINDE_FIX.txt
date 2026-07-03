@@ -1,0 +1,18 @@
+Zuhause am Bach OS V31.4 RC2 – Gemeinde-Fix
+
+Umgesetzt:
+- Gemeinde-/Ortstaxe-PDF bleibt A4 Querformat.
+- Gemeinde-/Ortstaxe-PDF ohne Logo.
+- Geburtsdatum wird im Gemeindeausdruck nicht angezeigt.
+- Geburtsdatum wird in der Gloria-Gemeinde-Freigabe nicht mehr als kritischer Pflichtfehler gewertet.
+- Fehlende PLZ/Ort/Land bleiben kritische Prüfpunkte.
+- Ortstaxe-Berechnung: Personen × Nächte × 2,60 € pro Person/Nacht.
+- PDF-Hinweis ergänzt: ohne Geburtsdatum · Querformat · 2,60 € pro Person/Nacht.
+
+Prüfung:
+- Syntaxprüfung: bestanden.
+- Pytest: 46 Tests bestanden.
+- Startdatei: START_MANAGER.bat auf V31.4 RC2 aktualisiert.
+
+Hinweis:
+- Geburtsdatum bleibt intern in Buchungen/Gastdaten möglich, wird aber für den Gemeindeausdruck nicht mehr verlangt.

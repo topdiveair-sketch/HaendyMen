@@ -1,0 +1,12 @@
+Zuhause am Bach OS – Sprint 12 / V31.3 RC2
+
+Umgesetzt:
+- Gästeprofil-360-Kernlogik in manager/modules/gastprofil.py ausgelagert.
+- Trennung: [Fakt], [Gelernt], [Schätzung], [Vermutung], [Nicht verifiziert].
+- Manuell eingefügte Google-KI-/Agenten-Hinweise werden nicht als Fakten behandelt.
+- Eigene Gästehistorie kann Wiederbuchung/Frühstück/Profilqualität verbessern.
+- Tests für Reiseart, Frühstück, manuelle Hinweise, Historie und Formatierung ergänzt.
+
+Geprüft:
+- Syntaxprüfung bestanden.
+- Pytest bestanden.

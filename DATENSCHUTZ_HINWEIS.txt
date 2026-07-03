@@ -1,0 +1,13 @@
+Datenschutzhinweis
+
+Das Programm verarbeitet personenbezogene Gästedaten, insbesondere Namen, Adresse, Kontaktdaten, Aufenthaltsdaten und Buchungsinformationen.
+
+Der Betreiber ist verantwortlich für:
+- rechtmäßige Erfassung
+- sichere Speicherung
+- Zugriffsbeschränkung
+- richtige Aufbewahrung
+- Löschung nach Ablauf gesetzlicher Fristen
+- Einhaltung geltender Datenschutzvorschriften
+
+Dieses Dokument ersetzt keine Rechtsberatung.

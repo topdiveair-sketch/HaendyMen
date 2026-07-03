@@ -1,0 +1,23 @@
+SPRINT 3 – Kalender modularisiert
+
+[Fakt] Ausgeführt am: 2026-06-30
+
+Umgesetzt:
+- Neue Datei manager/modules/kalender.py
+- Kalender-Kernlogik aus der GUI herausgelöst:
+  - Monatsgrenzen
+  - 6-Wochen-Kalenderraster
+  - Buchungsüberschneidungen
+  - belegte Nächte
+  - Monatskennzahlen
+  - kompakte Mülllabels
+- Hauptdatei nutzt diese Kalenderfunktionen.
+- Versionsanzeige auf Version 30.3 Sprint 3 – Kalender modularisiert geändert.
+
+Geprüft:
+- Syntaxprüfung bestanden.
+- 17 Tests bestanden.
+
+[Nicht fertig]
+- GUI-Kalender ist weiterhin in der großen Hauptdatei.
+- Im nächsten Sprint sollte Mission Control / Tageszentrale aus der Hauptdatei in eigene UI-Komponenten herausgelöst werden.

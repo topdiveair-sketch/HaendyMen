@@ -1,0 +1,16 @@
+Zuhause am Bach OS V32.1 BETA
+Pruefung: Windi Brain Regeln + Outlook/Google Kalenderexport
+
+Ergebnis:
+- Syntaxpruefung bestanden
+- 65 Tests bestanden
+- Kalenderexport erzeugt gueltige ICS-Struktur
+- Jede Buchung bekommt stabile UID
+- Doppelte UID werden im Export verhindert
+- Outlook-Kompatibilitaet verbessert: All-day Events, BUSY-Status, CRLF, Zeilenfaltung
+- Kalenderexport wird vor dem Schreiben validiert
+- Windi Brain Regeln angelegt: Fidel, Gloria, Pia, Laura, Kalender/Outlook
+
+Hinweis:
+- Outlook/Google aktualisieren Termine am zuverlaessigsten ueber einen abonnierten Kalender/Cloud-Link.
+- Wiederholter manueller Import einer ICS-Datei kann je nach Kalenderprogramm dennoch Dubletten erzeugen. Empfehlung: eigenen Kalender "Zuhause am Bach Buchungen" verwenden.

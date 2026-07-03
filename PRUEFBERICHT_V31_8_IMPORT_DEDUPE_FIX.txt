@@ -1,0 +1,13 @@
+Zuhause am Bach OS V31.8 RC2 – Import-Dedupe Fix
+
+Korrektur:
+- Fehler behoben: name 'import_find_existing' is not defined
+- Import-Dedupe-Funktionen werden nun korrekt aus manager.modules.import_dedupe importiert
+- import_merge_guest_data wird ebenfalls korrekt angebunden
+
+Geprüft:
+- Syntaxprüfung
+- automatisierte Tests
+
+Hinweis:
+- Ziel bleibt: keine doppelten Gäste/Buchungen beim Booking-Import.

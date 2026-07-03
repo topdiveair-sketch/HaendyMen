@@ -1,0 +1,53 @@
+{
+  "updated": "2026-07-01T15:10:00",
+  "rules": [
+    {
+      "id": "fidel_price_fact_mode",
+      "owner": "Fidel",
+      "category": "Revenue",
+      "priority": "high",
+      "rule": "Preisempfehlungen muessen als Fakt, Gelernt, Schaetzung oder Nicht verifiziert gekennzeichnet werden.",
+      "action": "Preisvorschlag nur mit Begruendung anzeigen; keine automatische Preisänderung ohne Freigabe."
+    },
+    {
+      "id": "gloria_municipality_no_birthdate",
+      "owner": "Gloria",
+      "category": "Gemeinde",
+      "priority": "high",
+      "rule": "Gemeindeausdruck wird ohne Geburtsdatum erstellt und darf bei fehlenden Stammdaten drucken.",
+      "action": "Fehlende Daten nur warnen; Druck nicht blockieren. Ortstaxe = Personen x Naechte x 2.60."
+    },
+    {
+      "id": "gloria_backup_before_import",
+      "owner": "Gloria",
+      "category": "Import",
+      "priority": "critical",
+      "rule": "Vor jedem Import muss ein Backup angelegt werden.",
+      "action": "Import nur mit Backup und Import-Protokoll freigeben."
+    },
+    {
+      "id": "pia_no_auto_send",
+      "owner": "Pia",
+      "category": "Kommunikation",
+      "priority": "high",
+      "rule": "Pia bereitet Nachrichten vor, sendet aber nie ohne menschliche Freigabe.",
+      "action": "Nachricht als Entwurf/Vorschau anzeigen."
+    },
+    {
+      "id": "calendar_outlook_stable_uid",
+      "owner": "Fidel",
+      "category": "Kalender",
+      "priority": "high",
+      "rule": "Jede Buchung bekommt eine stabile ICS-UID fuer Outlook/Google.",
+      "action": "Kalenderexport validieren; doppelte UIDs verhindern; Outlook-Hinweis eigener Kalender/Abo."
+    },
+    {
+      "id": "laura_today_only",
+      "owner": "Laura",
+      "category": "Tagesmodus",
+      "priority": "medium",
+      "rule": "Laura-Modus zeigt nur heutige praktische Aufgaben.",
+      "action": "Reinigung, Fruehstueck, Waesche und Muell gross und einfach anzeigen."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Sprint 2 – Buchungen modularisiert
+=================================
+
+[Fakt] Basis: Zuhause_am_Bach_OS_V30_1_GLORIA_MUELL_INTEGRIERT.zip
+[Fakt] Ziel: Buchungs-Kernlogik aus der großen Hauptdatei in ein testbares Modul auslagern.
+
+Umgesetzt:
+- manager/modules/buchungen.py ersetzt den bisherigen Platzhalter durch echte Buchungslogik.
+- ausgelagerte Funktionen:
+  - make_booking_id
+  - booking_identity_key
+  - ensure_unique_booking_ids
+  - validate_booking_record
+  - dates_overlap
+  - booking_conflicts
+  - upsert_booking
+  - delete_booking_and_extras
+- Hauptprogramm nutzt das neue Buchungsmodul.
+- Beim Speichern wird jetzt zusätzlich eine mögliche Doppelbelegung im selben Zimmer geprüft.
+- Löschen entfernt weiterhin zugehörige Extras, aber über das Buchungsmodul.
+- Tests ergänzt: tests/test_sprint2_buchungen.py
+- pytest-Konfiguration ergänzt: tests/conftest.py
+
+Geprüft:
+- Syntaxprüfung aller Python-Dateien: bestanden
+- Pytest: 13 Tests bestanden
+
+Wichtig:
+- Das ist ein echter Modularisierungsschritt, kein vollständiger Neuaufbau.
+- Die Oberfläche bleibt bewusst weitgehend unverändert, damit nur ein Bereich risikoarm geändert wird.
+- Nächster sinnvoller Sprint: Buchungs-UI weiter entkoppeln oder Mission Control als Startseite sauber aufbauen.

@@ -1,0 +1,14 @@
+Zuhause am Bach OS V31.5 RC2 – Gemeindeausdruck auch bei fehlenden Daten
+
+Änderungen:
+- Gemeindeausdruck bleibt A4 Querformat.
+- Ohne Logo.
+- Ohne Geburtsdatum.
+- Ortstaxe: Personen × Nächte × 2,60 €.
+- Gloria blockiert den Gemeindeausdruck nicht mehr bei fehlenden Stammdaten.
+- Fehlende PLZ/Ort/Land/Personen/Nächte werden als Warnung angezeigt.
+- Ausdruck ist trotzdem möglich; Warnungen dienen nur zur Nachkontrolle.
+
+Prüfung:
+- Syntaxprüfung bestanden.
+- Pytest-Suite bestanden.

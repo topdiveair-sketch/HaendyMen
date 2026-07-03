@@ -1,0 +1,22 @@
+Zuhause am Bach OS V30.4 – Sprint 4 Mission Control modularisiert
+
+Status: geprüft
+Datum: 2026-06-30
+
+Umgesetzt:
+- Mission-Control-Workflowlogik aus GUI herausgelöst.
+- Neues Modul: manager/brain/mission_control_workflow.py
+- Schnellaktionen zentral definiert: quick_action_specs()
+- Fidel-Tageszusammenfassung als testbare Funktion: build_fidel_summary()
+- Fidel/Gloria/Pia-Tagesaufgaben als testbare Funktion: build_daily_tasks()
+- GUI nutzt die zentralen Mission-Control-Funktionen, statt Texte/Buttons doppelt in der Oberfläche zu halten.
+- Versionsanzeige auf V30.4 angepasst.
+
+Geprüft:
+- Syntaxprüfung bestanden.
+- 20 Tests bestanden.
+
+Wichtig:
+- Es wurde bewusst keine neue Großfunktion eingebaut.
+- Ziel war weniger Dopplung und mehr Wartbarkeit.
+- Nächster sinnvoller Sprint: Gloria Quality Center / Faktencheck modularisieren.
