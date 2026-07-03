@@ -1,22 +1,21 @@
-Zuhause am Bach Mobile – FEHLERFREIES GitHub Pages Paket
+Zuhause am Bach OS V32.4 BETA - Installationspaket
 
-Einbau:
+Installation unter Windows:
 1. ZIP entpacken.
-2. Den gesamten Inhalt ins GitHub-Repository kopieren:
-   - Ordner docs/
-   - Ordner .github/workflows/
-3. Commit & Push.
-4. GitHub > Settings > Pages:
-   Source = GitHub Actions.
-5. Actions laufen lassen.
+2. INSTALLIEREN_WINDOWS.bat doppelt anklicken.
+3. Das Programm wird installiert nach:
+   C:\Users\<Name>\Zuhause_am_Bach_OS_V32_4
+4. Es wird eine Desktop-Verknuepfung erstellt:
+   Zuhause am Bach OS V32.4
 
 Wichtig:
-- Nicht den ZIP-Ordner selbst hochladen.
-- docs/index.html muss existieren.
-- Der Workflow veröffentlicht exakt ./docs.
-- deploy-pages@v4 wird verwendet.
-- concurrency bricht alte hängende Deployments ab.
+- Bitte in einen neuen/leeren Ordner entpacken.
+- Wenn bereits eine Installation existiert, stoppt die Installation zur Sicherheit.
+- Start erfolgt ueber START_MANAGER.bat im Installationsordner.
 
-Wenn ein Deployment hängt:
-Actions > laufende alte Deployments abbrechen.
-Dann neuen Commit oder Workflow Dispatch starten.
+Enthalten:
+- Zuhause am Bach OS V32.4 BETA
+- Mobile Sync Export
+- mobile_data.json Export fuer Handy-App
+- Installations-Batchdatei
+- Debug-Startdatei
