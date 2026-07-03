@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Dashboard</h1>
+
+    <form id="searchForm" class="search">
+      <input id="query" type="search" placeholder="Enter city (e.g. Berlin)" autocomplete="off" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="suggestions" class="suggestions hidden"></div>
+
+    <section id="status" class="status hidden"></section>
+
+    <section id="current" class="card hidden">
+      <h2>Current</h2>
+      <div id="currentContent" class="grid"></div>
+    </section>
+
+    <section id="hourly" class="card hidden">
+      <h2>Hourly (next 24h)</h2>
+      <div id="hourlyList" class="horizontal"></div>
+    </section>
+
+    <section id="daily" class="card hidden">
+      <h2>7‑Day Forecast</h2>
+      <div id="dailyList" class="grid-cols"></div>
+    </section>
+
+    <footer class="footer">
+      Data from Open‑Meteo (no API key) • Geocoding via Open‑Meteo
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
