@@ -1,0 +1,28 @@
+name: ProjectOS ZAB Consolidation Build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate project files
+        shell: bash
+        run: |
+          test -f FUNKTIONSMATRIX_V31.md
+      - name: Package current project
+        shell: bash
+        run: |
+          mkdir -p dist
+          zip -r dist/zab-growth-cockpit.zip . -x '.git/*' 'dist/*'
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: projectos-growth-cockpit
+          path: dist/zab-growth-cockpit.zip
+          retention-days: 14
