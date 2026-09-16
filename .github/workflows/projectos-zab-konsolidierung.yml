@@ -20,9 +20,13 @@ jobs:
         run: |
           mkdir -p dist
           zip -r dist/zab-growth-cockpit.zip . -x '.git/*' 'dist/*'
+          cd dist
+          sha256sum zab-growth-cockpit.zip > SHA256SUMS.txt
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: projectos-growth-cockpit
-          path: dist/zab-growth-cockpit.zip
+          path: |
+            dist/zab-growth-cockpit.zip
+            dist/SHA256SUMS.txt
           retention-days: 14
