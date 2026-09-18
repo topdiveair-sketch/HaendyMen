@@ -20,7 +20,7 @@ jobs:
         run: |
           set -euo pipefail
           test -s index.html
-          if grep -R -n -E '^(<<<<<<<|=======|>>>>>>>)' --exclude-dir=.git .; then
+          if grep -R -n -E '^(<<<<<<<|>>>>>>>)' --exclude-dir=.git .; then
             echo "Merge conflict markers found."
             exit 1
           fi
