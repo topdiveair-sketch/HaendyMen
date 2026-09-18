@@ -1,0 +1,63 @@
+name: Static app smoke test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate static entrypoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          if grep -R -n -E '^(<<<<<<<|=======|>>>>>>>)' --exclude-dir=.git .; then
+            echo "Merge conflict markers found."
+            exit 1
+          fi
+
+      - name: Validate HTML and local assets
+        shell: python
+        run: |
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          root = Path(".")
+          html = root.joinpath("index.html").read_text(encoding="utf-8")
+          missing = []
+
+          class Parser(HTMLParser):
+              def handle_starttag(self, tag, attrs):
+                  values = dict(attrs)
+                  for attr in ("src", "href"):
+                      value = values.get(attr, "").strip()
+                      if not value or value.startswith(("#", "mailto:", "tel:", "data:", "javascript:")):
+                          continue
+                      parsed = urlparse(value)
+                      if parsed.scheme or parsed.netloc:
+                          continue
+                      path = parsed.path
+                      if not path or path == "/":
+                          continue
+                      candidate = root / path.lstrip("/")
+                      if path.endswith("/"):
+                          candidate = candidate / "index.html"
+                      if not candidate.exists():
+                          missing.append((tag, attr, value))
+
+          Parser().feed(html)
+          if missing:
+              for item in missing:
+                  print("Missing local asset:", *item)
+              raise SystemExit(1)
+          print("HTML parsed and local assets resolved.")
